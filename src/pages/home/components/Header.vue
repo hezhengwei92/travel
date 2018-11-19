@@ -8,7 +8,7 @@
       输入/城市/景点/游玩主题
     </div>
     <div class="header-right">
-      城市
+      {{this.city}}
       <span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
   </div>
@@ -16,7 +16,10 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  props: {
+    city: String
+  }
 }
 </script>
 <!-- 1rem = html font-size = 50px   2rem = html font-size = 100px   因为2倍图 86px 所以真实是43px = 43/50 = 0.86rem -->
